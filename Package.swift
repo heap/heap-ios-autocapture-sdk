@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.6
 import PackageDescription
 
 let package = Package(
@@ -21,8 +21,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "HeapIOSAutocapture",
-            url: "https://cdn.heapanalytics.com/ios/heap-ios-autocapture-0.0.7.zip",
-            checksum: "18ff3b181e01356e56025f8ff71d6e067cd080c91579c95f03b7a4330b98132a"
+            url: "https://cdn.heapanalytics.com/ios/heap-ios-autocapture-0.0.8.zip",
+            checksum: "1d248a3c5017fd8b3e0f290c8a72cc1aa421dfcf2da2d07efe48e3be12a83d45"
         ),
     .target(
         name: "HeapIOSAutocaptureWrapper",

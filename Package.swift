@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
@@ -12,23 +12,13 @@ let package = Package(
     products: [
         .library(
             name: "HeapIOSAutocapture",
-            type: .static,
-            targets: ["HeapIOSAutocaptureWrapper"])
-    ],
-    dependencies: [
-        .package(url: "git@github.com:heap/heap-swift-core-sdk.git", branch: "main"),
+            targets: ["HeapIOSAutocapture"])
     ],
     targets: [
         .binaryTarget(
             name: "HeapIOSAutocapture",
-            url: "https://cdn.heapanalytics.com/ios/heap-ios-autocapture-0.0.8.zip",
-            checksum: "1d248a3c5017fd8b3e0f290c8a72cc1aa421dfcf2da2d07efe48e3be12a83d45"
+            url: "https://cdn.heapanalytics.com/ios/heap-ios-autocapture-0.0.9.zip",
+            checksum: "2254a9dd8da503e7f42b1e28ed8a3c2aad7444ec67d117322ca061db4231bf17"
         ),
-    .target(
-        name: "HeapIOSAutocaptureWrapper",
-            dependencies: [
-                .product(name: "HeapSwiftCore", package: "heap-swift-core-sdk"),
-                "HeapIOSAutocapture"
-            ]),
     ]
 )

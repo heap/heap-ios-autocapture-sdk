@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "HeapIOSAutocapture",
-            url: "https://cdn.heapanalytics.com/ios/heap-ios-autocapture-0.1.0.zip",
-            checksum: "1f6d4693a9d3a7bd0165cf0d2d2bb79740b81b190dfac52d4e873467a72c1cdd"
+            url: "https://cdn.heapanalytics.com/ios/heap-ios-autocapture-0.1.1.zip",
+            checksum: "a43b0dc9caabcb3d980e33efce1695f87001b8f41d33c60beefc3d6e3d65fb42"
         ),
     ]
 )

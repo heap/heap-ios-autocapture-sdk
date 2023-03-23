@@ -14,11 +14,20 @@ let package = Package(
             name: "HeapIOSAutocapture",
             targets: ["HeapIOSAutocapture"])
     ],
+    dependencies: [
+        .package(url: "git@github.com:heap/heap-swift-core.git", revision: "154ff532a19b016aa3812372d4fbcb9a0e26f9fd")
+    ],
     targets: [
-        .binaryTarget(
+        .target(
             name: "HeapIOSAutocapture",
-            url: "https://cdn.heapanalytics.com/ios/heap-ios-autocapture-0.1.1.zip",
-            checksum: "a43b0dc9caabcb3d980e33efce1695f87001b8f41d33c60beefc3d6e3d65fb42"
+            dependencies: [
+                .product(name: "HeapSwiftCore", package: "heap-swift-core"),
+                "HeapIOSAutocaptureImplementation",
+            ]),
+        .binaryTarget(
+            name: "HeapIOSAutocaptureImplementation",
+            url: "https://cdn.heapanalytics.com/ios/heap-ios-autocapture-0.1.2-alpha.2.zip",
+            checksum: "786d2f28fe64d3181ace3c78c5e4b6f68f0b65243733257eaf30afa3de3c7252"
         ),
     ]
 )

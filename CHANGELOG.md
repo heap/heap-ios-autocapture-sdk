@@ -7,14 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2]
+
+### Fixed
+
+- Restructured package so HeapSwiftCore can be used as a dependency.
+
 ## [0.1.1]
 
 ### Fixed
 
-- [HEAP-41356] Fixed error when sending nil to certain sendEvent arguments
+- Fixed error when sending nil to certain sendEvent arguments.
 
 ## [0.1.0]
 
 ### Added
 
-- Autocapture SDK targeting iOS 13.0+ and Xcode 14.0+
+- Autocapture SDK targeting iOS 13.0+ and Xcode 14.0+.
+
+[0.1.2]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.1.2
+[0.1.1]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.1.1
+[0.1.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.1.0

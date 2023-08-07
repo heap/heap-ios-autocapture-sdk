@@ -7,6 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0]
+
+### Added
+
+- Added option `.useObjectiveCClassNames` to use Classic SDK naming logic for view and view
+  controller names.  This option will be useful for Classic SDK users when evaluating the new
+  autocapture SDK, as names will be consistent with existing event definitions for views.
+
+### Changed
+
+- Updated view and view controller names to include parent types, such as `enum` or
+  `struct` when used for code organization.
+  
+  For example, the following code will produce `Home.ViewController` instead of `ViewController`:
+  
+  ```swift
+  enum Home {
+      class ViewController: UIViewController { ... }
+  }
+  ```
+
+- Increased HeapSwiftCore dependency from 0.1.2 to 0.3.0 to ensure
+  improvements are automatically included when updating.
+  
+- When a control has multiple actions, the first action that is called will be used for
+  **Action Method**, rather than the last.  This matches the behavior of the Classic SDK.
+
 ## [0.2.1]
 
 ### Fixed
@@ -48,6 +75,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Autocapture SDK targeting iOS 13.0+ and Xcode 14.0+.
 
+[0.3.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.3.0
 [0.2.1]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.2.1
 [0.2.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.2.0
 [0.1.2]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.1.2

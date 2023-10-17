@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0]
+
+### Fixed
+
+- Fixed a bug where Heap could remove action listeners on custom subclasses of `UIControl`, when
+  the target of the action listener was the control.
+  ([heap/heap-ios-autocapture-sdk#2](https://github.com/heap/heap-ios-autocapture-sdk/issues/2))
+
+- Fixed a bug where pageview view controller names did not reflect naming changes made in 0.3.0.
+
+### Added
+
+- Added open `heapText`, `heapTextChildren`, and `heapTextRecursionVisibility`
+   variables to `UIView` to support overriding **Target Text** on custom views.
+
 ## [0.3.0]
 
 ### Added
@@ -75,6 +90,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Autocapture SDK targeting iOS 13.0+ and Xcode 14.0+.
 
+[0.4.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.4.0
 [0.3.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.3.0
 [0.2.1]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.2.1
 [0.2.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.2.0

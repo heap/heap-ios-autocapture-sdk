@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'HeapIOSAutocapture'
-  s.version = '0.4.0'
+  s.version = '0.5.0'
   s.license = { :type => 'MIT' }
   s.summary = 'HeapIOSAutocapture is an iOS autocapture library for UIKit-based apps.'
   s.homepage = 'https://heap.io'

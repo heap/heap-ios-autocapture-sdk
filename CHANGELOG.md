@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0]
+
+### Fixed
+
+- Fixed code signing when targeting Catalyst. The issue was caused by the zip file not preserving
+  symlinks.
+
+### Changed
+
+- "Target IVar" capture is now disabled by default since certain code patterns can cause Swift's
+  `Mirror` to crash.  This can be re-enabled by starting Heap with
+  `.enableInteractionReferencingPropertyCapture: true`.
+
 ## [0.4.0]
 
 ### Fixed
@@ -90,6 +103,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Autocapture SDK targeting iOS 13.0+ and Xcode 14.0+.
 
+[0.5.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.5.0
 [0.4.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.4.0
 [0.3.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.3.0
 [0.2.1]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.2.1

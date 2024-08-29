@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'HeapIOSAutocapture'
-  s.version = '0.5.0'
+  s.version = '0.7.0'
   s.license = { :type => 'MIT' }
   s.summary = 'HeapIOSAutocapture is an iOS autocapture library for UIKit-based apps.'
   s.homepage = 'https://heap.io'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.cocoapods_version = '>= 1.7.0'
 
-  s.dependency 'HeapSwiftCore', '~> 0.3'
+  s.dependency 'HeapSwiftCore', '~> 0.7'
 
   s.source_files = 'Sources/HeapIOSAutocapture/**/*.swift'
   s.vendored_frameworks = 'HeapIOSAutocaptureImplementation.xcframework'

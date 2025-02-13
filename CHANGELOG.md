@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.8.0]
+
+### Changed
+
+- Set minimum HeapSwiftCore version to 0.8.0.
+- `heapRedactText` now automatically redacts accessibility labels in the same scope, overriding
+  `heapReactAccessibilityLabel`.  This reduces the risk of accidental text collection on sensitive
+  elements.
 
 ## [0.7.0]
 
@@ -111,6 +118,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Autocapture SDK targeting iOS 13.0+ and Xcode 14.0+.
 
+[0.8.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.8.0
+[0.7.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.7.0
 [0.5.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.5.0
 [0.4.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.4.0
 [0.3.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.3.0

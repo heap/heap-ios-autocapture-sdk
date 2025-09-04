@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.0]
+  
+### Added
+
+- Improved support for SwiftUI.
+
+### Fixes
+
+- When a `UITextView` is editable, the taps will always be attributed to the text view and not
+  subviews.
+- Heap will no longer capture screenviews in the text effects window.
+- `UITextField` no longer creates a pageview on focus.
+
+### Changed
+
+- To support the `UITextField` fix, and catch the class of issue, Heap will only issue pageviews
+  for view controllers that exist within the standard hierarchy.  That is to say calling `parent`
+  and `presentingViewController` from a view controller should eventually resolve to a its window's
+  `rootViewController`.
+
 ## [0.8.0]
 
 ### Changed
@@ -118,6 +138,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Autocapture SDK targeting iOS 13.0+ and Xcode 14.0+.
 
+[0.9.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.9.0
 [0.8.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.8.0
 [0.7.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.7.0
 [0.5.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.5.0

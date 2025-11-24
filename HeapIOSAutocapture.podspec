@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'HeapIOSAutocapture'
-  s.version = '0.9.1'
+  s.version = '0.10.0'
   s.summary = 'HeapIOSAutocapture is an iOS autocapture library for UIKit-based apps.'
   s.homepage = 'https://docs.contentsquare.com/ios'
   s.author = { 'Contentsquare' => 'contact@contentsquare.com' }

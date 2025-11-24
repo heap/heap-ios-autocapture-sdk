@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0]
+
+### Changed
+
+- View controllers that are 100% covered by a child view controller no longer receive screenviews
+  by default.  This reduces noisy pageviews for intermediate SwiftUI view controllers.
+- As a result of the above, taps on navigation and tab elements in SwiftUI will be better
+  attributed to the screenview representing app contents.
+
+### Added
+
+- `UIViewController.isImplicitHeapContainer`, a getter that returns true if the view controller is
+  completely covered by a single child view controller that is also a container.
+
 ## [0.9.1]
 
 ### Fixed
@@ -150,6 +164,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Autocapture SDK targeting iOS 13.0+ and Xcode 14.0+.
 
+[0.10.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.10.0
 [0.9.1]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.9.1
 [0.9.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.9.0
 [0.8.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.8.0

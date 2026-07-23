@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'HeapIOSAutocapture'
-  s.version = '0.10.1'
+  s.version = '0.10.2'
   s.summary = 'HeapIOSAutocapture is an iOS autocapture library for UIKit-based apps.'
   s.homepage = 'https://docs.contentsquare.com/ios'
   s.author = { 'Contentsquare' => 'contact@contentsquare.com' }
@@ -30,7 +30,7 @@ LICENSE
   s.ios.deployment_target = '13.0'
   s.cocoapods_version = '>= 1.7.0'
   
-  s.dependency 'HeapSwiftCore', '~> 0.8'
+  s.dependency 'HeapSwiftCore', '~> 0.9.2'
 
   s.vendored_frameworks = 'HeapIOSAutocapture.xcframework'
   s.swift_versions = ['5.0']

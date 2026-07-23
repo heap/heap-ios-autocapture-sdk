@@ -13,7 +13,7 @@ let package = Package(
         ]),
     ],
     dependencies: [
-        .package(url: "https://github.com/heap/heap-swift-core-sdk.git", from: "0.8.8"),
+        .package(url: "https://github.com/heap/heap-swift-core-sdk.git", from: "0.9.2"),
     ],
     targets: [
         .target(
@@ -25,8 +25,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "HeapIOSAutocapture",
-            url: "https://github.com/heap/heap-ios-autocapture-sdk/releases/download/0.10.1/package.zip",
-            checksum: "b6dfe761cfd9bf66305c8e642806b48bacd8126b66ded787ea37d360d004f4f4"
+            url: "https://github.com/heap/heap-ios-autocapture-sdk/releases/download/0.10.2/package.zip",
+            checksum: "ada1cc187622f4271b10f8a5e6f6d4dbc929779e74d55e0ff50c4a0b5657273b"
     )
     ],
     swiftLanguageVersions: [.v5]

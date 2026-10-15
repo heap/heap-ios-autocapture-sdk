@@ -10,6 +10,6 @@ Heap can be installed using the developer instructions at https://developers.hea
 
 - HeapIOSAutocapture has one package dependency, [HeapSwiftCore], which handles state
   management and data uploads.
-- HeapIOSAutocapture requires a Swift 5.7 or later toolchain, as packaged in Xcode 14.0 or later.
+- HeapIOSAutocapture requires a Swift 5.9 or later toolchain, as packaged in Xcode 16.0 or later.
 
 [HeapSwiftCore]: https://github.com/heap/heap-swift-core-sdk

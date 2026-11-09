@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.1]
+
+### Fixed
+
+- Applied defensive copying of `NSAttributedString` instances to reduce risk of release-related
+  crashes attributed to the SDK.
+
 ## [0.11.0]
 
 ### Added
@@ -208,6 +215,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Autocapture SDK targeting iOS 13.0+ and Xcode 14.0+.
 
+[0.11.1]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.11.1
 [0.11.0]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.11.0
 [0.10.3]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.10.3
 [0.10.2]: https://github.com/heap/heap-ios-autocapture-sdk/releases/tag/0.10.2

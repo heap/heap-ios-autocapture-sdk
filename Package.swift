@@ -32,8 +32,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "HeapIOSAutocapture",
-            url: "https://github.com/heap/heap-ios-autocapture-sdk/releases/download/0.11.0/package.zip",
-            checksum: "458407471208e6c2ab644d0e6a3383bdc568b4fd8d2e493f1b4f5ed1e39ac176"
+            url: "https://github.com/heap/heap-ios-autocapture-sdk/releases/download/0.11.1/package.zip",
+            checksum: "d791c9df3cee1bb00a7dfbdb690c1fc5d3a49206c15079cae746cb6df41a937d"
     )
     ],
     swiftLanguageVersions: [.v5]
